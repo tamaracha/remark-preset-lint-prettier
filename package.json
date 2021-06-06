@@ -1,0 +1,40 @@
+{
+  "name": "remark-preset-lint-prettier",
+  "version": "0.0.1",
+  "description": "Harmonizes Remark-lint with Prettier",
+  "author": "Tamara Cook <10754072+tamaracha@users.noreply.github.com>",
+  "license": "MIT",
+  "keywords": [
+    "remark",
+    "remark-lint",
+    "remark-preset",
+    "prettier"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/tamaracha/remark-preset-lint-prettier.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tamaracha/remark-preset-lint-prettier/issues"
+  },
+  "homepage": "https://github.com/tamaracha/remark-preset-lint-prettier#readme",
+  "main": "index.js",
+  "scripts": {
+    "format": "prettier -w .",
+    "lint": "standard --fix .",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "lint-staged": "^11.0.0",
+    "prettier": "^2.3.1",
+    "standard": "^16.0.3",
+    "husky": "^6.0.0"
+  },
+  "lint-staged": {
+    "*.{json,md,yaml,yml}": "prettier -w",
+    "*.js": [
+      "standard --fix",
+      "prettier -w"
+    ]
+  }
+}
