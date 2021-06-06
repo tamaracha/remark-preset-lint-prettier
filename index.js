@@ -1,7 +1,7 @@
 'use strict'
-const { optionalDependencies } = require('./package.json')
+const { peerDependencies } = require('./package.json')
 
-const plugins = Object.keys(optionalDependencies)
+const plugins = Object.keys(peerDependencies)
   .filter((dep) => dep.startsWith('remark-lint-'))
   .reduce((plugins, dep) => {
     try {
