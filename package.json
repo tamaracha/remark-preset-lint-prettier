@@ -19,6 +19,9 @@
   },
   "homepage": "https://github.com/tamaracha/remark-preset-lint-prettier#readme",
   "main": "index.js",
+  "files": [
+    "index.js"
+  ],
   "scripts": {
     "format": "prettier -w .",
     "lint": "standard --fix .",
