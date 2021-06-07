@@ -1,0 +1,8 @@
+{
+  "plugins": [
+    "preset-lint-recommended",
+    "preset-lint-consistent",
+    "preset-lint-markdown-style-guide",
+    "./index.js"
+  ]
+}
